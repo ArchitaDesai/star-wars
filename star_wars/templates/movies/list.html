@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    
+    <h1 class="font-italic text-center mb-4" style="color: #2f4367;"> Movies </h1>
+    
+    <div class="mx-auto" style="width: 700px;">
+        {% for movie in movies %}    
+            <div class="card mb-4">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        {% load static %}
+                        {% comment %} ToDo: Built custom modulus operator {% endcomment %}
+                        <img src="{% static '' %}images/movies/movie{{ movie.swapi_id }}.jpeg" class="card-img" alt="A Star Wars movie image">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{ movie.title }}</h5>
+                            <p class="card-text" style="font-size:14px">{{movie.opening_crawl | truncatechars:120 }}</p>
+                            <a href="{% url 'update-favourite-movie' swapi_id=movie.swapi_id movie_title=movie.title %}"
+                                style="margin-left: 85%">
+                                {% if movie.is_favourite %}
+                                    <i class="fa fa-heart" style="font-size:30px;color:#e42790"></i>
+                                {% else %}
+                                    <i class="fa fa-heart-o" style="font-size:30px;color:#e42790"></i>
+                                {% endif %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
