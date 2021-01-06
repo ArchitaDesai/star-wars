@@ -11,7 +11,7 @@
 - View favourited planets & movies on the home page
 - Navigate through various views within the app with navbar
 - Search planet name to see the detailed view of the planet
-
+- Pagination support for planets through URL as well as through UI navigation
 
 ## Screenshots
 
@@ -57,5 +57,23 @@ python manage.py runserver
 - FontAwesome
     - For icons
 - Star Wars API (SWAPI)
-    - To fetch data for planets & movies
+    - To fetch star wars data for planets & movies
 
+## Technical Details
+
+### App Endpoints - `/app`
+
+- `/login`:
+    - Login page
+- `/home`:
+    - Home page, showing list of favourited planets & movies
+- `/planets`:
+    - List of planets with pagination & favourite/unfavourite button
+    - Pagination:
+        - `/app/planets/1` - for page 1
+        - `/app/planets/2` - for page 2
+        - Navigation also available through UI
+- `/movies`:
+    - List of movies with favourite/unfavourite button
+- `/search`:
+    - Detailed planet view by its name available through the UI

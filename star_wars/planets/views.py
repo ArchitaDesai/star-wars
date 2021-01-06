@@ -38,8 +38,10 @@ def format(data):
     return formatted_planets
 
 
-def list_planets(request):
-    response = requests.get('https://swapi.dev/api/planets/')
+def list_planets(request, page_number=1):
+    endpoint = 'https://swapi.dev/api/planets/?page='
+    url = endpoint + str(page_number)
+    response = requests.get(url)
     data = response.json()
     formatted_planets = format(data)
     return render(request, 'planets/list.html', {'planets': formatted_planets})
@@ -60,4 +62,5 @@ def update_favourite(request, swapi_id, planet_name):
         # Create & set is_favourite to true
         Planet.objects.create(swapi_id=swapi_int, name=planet_name, is_favourite=True)
 
-    return HttpResponseRedirect('/app/planets')
+    # Redirect to home/favourites list view
+    return HttpResponseRedirect('/app/home')
