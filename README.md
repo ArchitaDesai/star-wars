@@ -48,6 +48,15 @@ cd star_wars && python manage.py migrate
 python manage.py runserver
 ```
 
+### Tech Stack
+- Python/Django
+    - Framework used to create the app
+- Bootstrap 4
+    - To make the app responsive
+- FontAwesome
+    - For icons
+- Star Wars API (SWAPI)
+    - To fetch data for planets & movies
 
 ### Tech Stack
 - Python/Django
