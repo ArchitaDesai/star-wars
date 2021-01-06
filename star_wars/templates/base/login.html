@@ -18,12 +18,14 @@
         </a>
     </nav>
     
-    <div class="mx-auto" style="width:600px;">
+    <div class="mx-auto text-center" style="width:300px;">
       <form class="form-signin" action="/app/home/" method="post">
         {% csrf_token %}
-        <h3 class="h3 mb-3 font-weight-normal">Please enter your username here to continue</h3>
+        <h3 class="h3 mb-3 font-weight-normal">Login</h3>
         <label for="inputUserName" class="sr-only">Username</label>
-        <input type="text" id="inputUserName" class="form-control" placeholder="Username" required autofocus> 
+        <input type="text" id="inputUserName" class="form-control mt-4 mb-2" placeholder="Username" required autofocus> 
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
         <button class="btn btn-primary mt-4 mb-4" type="submit">Take me in</button>
       </form>
     </div>

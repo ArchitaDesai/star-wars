@@ -15,11 +15,14 @@
 
 ## Screenshots
 
-###### Planets' List (can favourite/unfavourite a planet)
-![Planets List](readme_images/planets.png)
+###### Login on homepage
+![Planets List](readme_images/login.png)
 
-###### Movies' List (can favourite/unfavourite a movie)
+###### List of Movies (can favourite & unfavourite movies)
 ![Movies List](readme_images/movies.png)
+
+###### List of Planets (can favourite & unfavourite planets)
+![Planets List](readme_images/planets.png)
 
 
 ## For Developers
