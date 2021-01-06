@@ -3,7 +3,7 @@
 ###### A star wars app, built with Django.
     Lets you view & favourite your desired star wars data.
 
-## Features Implemented
+## Features
 
 - Loads list of planets & movies from SWAPI 
 - View planets & movies
@@ -29,12 +29,9 @@
 
 ### Installation Instructions
 
-- Run following commands after cloning this repository
+Run following commands inside the cloned repository:
 
 ```
-# Go inside the directory containing the project
-cd star-wars
-
 # Create virtual environment
 virtualenv -p python3.7 venv
 
@@ -45,16 +42,20 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Go inside the 'star_wars' directory & run migrations
-cd star_wars
-python manage.py makemigrations
-python manage.py migrate
+cd star_wars && python manage.py migrate
 
-```
-
-#### Run the App
-- To run the app, run following command and open `localhost:8000` in the browser once the development server has started.
-
-```
+# To start the development server
 python manage.py runserver
 ```
+
+
+### Tech Stack
+- Python/Django
+    - Framework used to create the app
+- Bootstrap 4
+    - To make the app responsive
+- FontAwesome
+    - For icons
+- Star Wars API (SWAPI)
+    - To fetch data for planets & movies
 
