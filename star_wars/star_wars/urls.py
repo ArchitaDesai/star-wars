@@ -18,8 +18,10 @@ from django.urls import path, include
 
 from planets.urls import urlpatterns as planet_urls
 from movies.urls import urlpatterns as movie_urls
+from home.urls import urlpatterns as home_urls
 
 urlpatterns = [
+    path('', include(home_urls)),
     path('admin/', admin.site.urls),
     path('app/planets/', include(planet_urls)),
     path('app/movies/', include(movie_urls)),

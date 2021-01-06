@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <h1>Favourites</h1>
+
+    <h2>Favourite Movies</h2>
+    {% for favourite_movie in favourite_movies %}
+        <div>
+            <p> {{ favourite_movie.title }} </p>
+        </div>
+    {% endfor %}
+
+    <h2>Favourite Planets</h2>
+    {% for favourite_planet in favourite_planets %}
+        <div>
+            <p> {{ favourite_planet.name }} </p>
+        </div>
+    {% endfor %}
+    
+
+{% endblock %}

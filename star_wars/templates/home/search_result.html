@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <div class="mx-auto" style="width: 700px;">
+        <h3> Here are details about your planet...</h3>
+        <ul>
+            <li>Name: {{ planet.name }}</li>
+            <li>Rotation Period: {{ planet.rotation_period }}</li>
+            <li>Diameter: {{ planet.diameter }}</li>
+            <li>Climate: {{ planet.climate }}</li>
+            <li>Population: {{ planet.population  }}</li>
+        </ul>
+    </div>
+
+{% endblock %}

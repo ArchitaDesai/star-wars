@@ -29,17 +29,26 @@
             {% comment %} {% if request.user.is_authenticated %} {% endcomment %}
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item px-4 font-weight-bold">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/app/home">Home</a>
                     </li>
                     <li class="nav-item font-weight-bold">
                         <a class="nav-link" href="/app/planets">Planets</a>
                     </li>
                     <li class="nav-item font-weight-bold ml-3">
                         <a class="nav-link" href="/app/movies">Movies</a>
-                    </li>
+                    </li>                    
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right font-weight-bold">
+                    <form class="form-inline mr-5" action="/app/search/" method="post">
+                      {% csrf_token %}
+                      <input class="form-control mr-sm-2" type="search" id="search" name="planet_name" 
+                            placeholder="Enter planet name here..." aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        Search
+                      </button>
+                    </form>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Log out</a>
                     </li>
