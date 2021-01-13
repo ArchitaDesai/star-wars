@@ -15,14 +15,19 @@
 
 ## Screenshots
 
-###### Login on homepage
-![Planets List](readme_images/login.png)
+###### Login View
+![Login view](readme_images/login.png)
+
+###### Favourite Movies & Planets (can favourite & unfavourite them from homepage)
+![Favourite Movies & Planets view](readme_images/favourites.png)
+
 
 ###### List of Movies (can favourite & unfavourite movies)
 ![Movies List](readme_images/movies.png)
 
 ###### List of Planets (can favourite & unfavourite planets)
 ![Planets List](readme_images/planets.png)
+
 
 
 ## For Developers

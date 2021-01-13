@@ -11,7 +11,8 @@
                     <div class="col-md-6">
                         {% load static %}
                         {% load modulo %}
-                        <img src="{% static 'images/planets/planet'%}{{ planet.swapi_id|modulo:4 }}.jpg" class="card-img" alt="A Star Wars planet image">
+                        <img src="{% static 'images/planets/planet'%}{{ planet.swapi_id|modulo:4 }}.jpg"
+                            class="card-img" height="100%" alt="A Star Wars planet image">
                     </div>
                     <div class="col-md-6">
                         <div class="card-body">

@@ -47,4 +47,4 @@ def update_favourite(request, swapi_id, movie_title):
     except Movie.DoesNotExist:
         Movie.objects.create(swapi_id=swapi_int, title=movie_title, is_favourite=True)
 
-    return HttpResponseRedirect('/app/movies')
+    return HttpResponseRedirect('/app/home')
