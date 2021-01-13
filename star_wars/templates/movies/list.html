@@ -11,8 +11,8 @@
                 <div class="row no-gutters">
                     <div class="col-md-6">
                         {% load static %}
-                        {% comment %} ToDo: Built custom modulus operator {% endcomment %}
-                        <img src="{% static '' %}images/movies/movie{{ movie.swapi_id }}.jpeg" class="card-img" alt="A Star Wars movie image">
+                        {% load modulo %}
+                        <img src="{% static 'images/movies/movie'%}{{ movie.swapi_id|modulo:4 }}.jpeg" class="card-img" alt="A Star Wars Movie image">
                     </div>
                     <div class="col-md-6">
                         <div class="card-body">
