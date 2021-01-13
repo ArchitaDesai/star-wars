@@ -6,21 +6,23 @@
 ## Features
 
 - Loads list of planets & movies from SWAPI 
-- View planets & movies
-- Favourite & unfavourite planets & movies
+- View planets & movies' list views
+    - Favourite & unfavourite planets & movies from their list views
 - View favourited planets & movies on the home page
-- Navigate through various views within the app with navbar
+    - Favourite & unfavourite favourited planets & movies from the home page
 - Search planet name to see the detailed view of the planet
+    - Favourite & unfavourie resultant planet from the results view
+- Navigate through various views within the app with navbar
 - Pagination support for planets through URL as well as through UI navigation
+
 
 ## Screenshots
 
 ###### Login View
 ![Login view](readme_images/login.png)
 
-###### Favourite Movies & Planets (can favourite & unfavourite them from homepage)
+###### Homepage - Favourite Movies & Planets' view   (can favourite & unfavourite them from homepage)
 ![Favourite Movies & Planets view](readme_images/favourites.png)
-
 
 ###### List of Movies (can favourite & unfavourite movies)
 ![Movies List](readme_images/movies.png)
@@ -28,6 +30,8 @@
 ###### List of Planets (can favourite & unfavourite planets)
 ![Planets List](readme_images/planets.png)
 
+###### Search by Planet name (can favourite & unfavourite resultant planet)
+![Planets List](readme_images/search_result.png)
 
 
 ## For Developers
